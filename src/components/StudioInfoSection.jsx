@@ -1,8 +1,8 @@
-/**
- * StudioInfoSection - The "About the Studio" section with parallax images,
- * services list, floating object illustrations, and team credits.
- */
+import { useRef } from 'react';
 import { NothinLetterSvgs } from './NothinLetterSvgs';
+import useTextReveal from '../hooks/useTextReveal';
+import useParallax from '../hooks/useParallax';
+import useFormesCursor from '../hooks/useFormesCursor';
 
 const SERVICES = [
   'Brand identities',
@@ -16,8 +16,14 @@ const FOUNDERS = ['Sara Guedj', 'Anne-Sophie Do', 'Gabriel Guedj', 'Guillaume Fa
 const CREATIVE_PARTNERS = ['Pierre Patrault', 'Thomas Carré', 'Guillaume Perrette'];
 
 export default function StudioInfoSection() {
+  const sectionRef = useRef(null);
+
+  useTextReveal(sectionRef);
+  useParallax(sectionRef);
+  useFormesCursor(sectionRef);
+
   return (
-    <section id="studio" className="section info-img">
+    <section id="studio" className="section info-img" ref={sectionRef}>
       <div className="section-separator-blur"></div>
       <div className="container">
         <div className="space-87"></div>

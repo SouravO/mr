@@ -1,15 +1,19 @@
-/**
- * StudioVideoSection - The manifesto video displayed in a museum-like frame
- * with a reflection effect and sound toggle button.
- */
+import { useRef } from 'react';
+import useMuseeVideoSync from '../hooks/useMuseeVideoSync';
+
 export default function StudioVideoSection() {
+  const sectionRef = useRef(null);
+
+  useMuseeVideoSync(sectionRef);
+
   return (
-    <section id="studio-video" className="section video">
+    <section id="studio-video" className="section video" ref={sectionRef}>
       <div className="container video">
         <div className="musee-w">
           <img
             src="https://noth-in.b-cdn.net/freepik__photography-frontal-shot-of-a-huge-large-169-white__495122.webp"
             loading="lazy"
+            alt=""
             className="musee-bg"
           />
 

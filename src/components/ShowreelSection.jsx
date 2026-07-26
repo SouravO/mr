@@ -1,10 +1,15 @@
-/**
- * ShowreelSection - The showreel video with tagline and description.
- * "Most brands produce content. We prefer ideas."
- */
+import { useRef } from 'react';
+import useShowreelScale from '../hooks/useShowreelScale';
+import useTextReveal from '../hooks/useTextReveal';
+
 export default function ShowreelSection() {
+  const sectionRef = useRef(null);
+
+  useShowreelScale(sectionRef);
+  useTextReveal(sectionRef);
+
   return (
-    <section className="section showreel">
+    <section className="section showreel" ref={sectionRef}>
       <div className="container showreel">
         <div className="space-150 mob-50"></div>
 

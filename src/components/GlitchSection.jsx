@@ -1,8 +1,6 @@
-/**
- * GlitchSection - The scroll-triggered glitch text effect section
- * with elevator image, repeating "we are nothin'" text blocks,
- * and bottom parallax images (sausage box + balloon).
- */
+import { useRef } from 'react';
+import useTextReveal from '../hooks/useTextReveal';
+import useParallax from '../hooks/useParallax';
 
 const GLITCH_TEXT = "we are nothin'";
 const GARBLED_TEXT = "Pj(è !!\u201D .      U§hs .   jkj . k .     rh";
@@ -20,8 +18,13 @@ function GlitchTextBlock({ variant }) {
 }
 
 export default function GlitchSection() {
+  const sectionRef = useRef(null);
+
+  useTextReveal(sectionRef);
+  useParallax(sectionRef);
+
   return (
-    <section className="section glitch">
+    <section className="section glitch" ref={sectionRef}>
       {/* Elevator image */}
       <div className="glitch-img-w">
         <img

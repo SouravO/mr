@@ -1,8 +1,8 @@
-/**
- * WorksSection - The project grid showcasing featured works.
- * Uses a data-driven approach for the work items to keep the JSX clean,
- * while preserving all Webflow class names and attributes for GSAP.
- */
+import { useRef } from 'react';
+import useWorksGrid from '../hooks/useWorksGrid';
+import useTextReveal from '../hooks/useTextReveal';
+import useButtonEffects from '../hooks/useButtonEffects';
+import useProjectNav from '../hooks/useProjectNav';
 
 const WORKS = [
   {
@@ -42,7 +42,6 @@ const WORKS = [
   },
 ];
 
-/** Small arrow icon used inside each work card's "explore" cursor */
 function ExploreArrow() {
   return (
     <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,14 +51,9 @@ function ExploreArrow() {
   );
 }
 
-/** A single work/project card */
 function WorkItem({ title, description, href, imgSrc, srcSet }) {
   return (
-    <div
-      id="w-node-_4052a9ed-bc85-74d6-2f8d-4f251e3cf60d-78a9d1a3"
-      role="listitem"
-      className="work_item w-dyn-item"
-    >
+    <div className="work_item w-dyn-item">
       <h2 line="" className="title-work">{title}</h2>
       <p line="" className="short-p-work">{description}</p>
       <a href={href} className="work-link w-inline-block">
@@ -85,8 +79,15 @@ function WorkItem({ title, description, href, imgSrc, srcSet }) {
 }
 
 export default function WorksSection() {
+  const sectionRef = useRef(null);
+
+  useWorksGrid(sectionRef);
+  useTextReveal(sectionRef);
+  useButtonEffects(sectionRef);
+  useProjectNav(sectionRef);
+
   return (
-    <section id="works" className="section works">
+    <section id="works" className="section works" ref={sectionRef}>
       <div className="container works">
         {/* Sticky "WORKS" letters */}
         <div className="works-word-w">
