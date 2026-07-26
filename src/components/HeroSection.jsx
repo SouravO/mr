@@ -30,7 +30,7 @@ export default function HeroSection() {
             className="btn black-blend w-inline-block"
           >
             <div className="btn__text">
-              <p className="btn__text-p">book a call</p>
+              <p className="btn__text-p">Shop Now</p>
             </div>
             <div className="arrow-w">
               <div className="arrow black-blend">
@@ -43,7 +43,7 @@ export default function HeroSection() {
 
         {/* Bottom bar — location + social links */}
         <div className="link-hero-bottom-w">
-          <div delay="1.5" line="" no-scroll="">Creative studio in Paris</div>
+          <div delay="1.5" line="" no-scroll="">Mr Plus for everything</div>
           <div delay="1.5" opacity="" no-scroll="" className="link-hero-lang-w">
             <div className="link-hero-w">
               <a href="https://www.linkedin.com/company/nothin/" target="_blank" rel="noreferrer" className="link hide-desk w-inline-block">

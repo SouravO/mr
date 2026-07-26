@@ -6,36 +6,36 @@ import useProjectNav from '../hooks/useProjectNav';
 
 const WORKS = [
   {
-    title: 'Utopia',
+    title: 'TV',
     description: 'Where taste meets meaning.',
     href: 'works/utopia.html',
     imgSrc: 'https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bb9740ace5d22b1065c_work-vignette-utopia-V2.webp',
     srcSet: 'https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bb9740ace5d22b1065c_work-vignette-utopia-V2-p-500.webp 500w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bb9740ace5d22b1065c_work-vignette-utopia-V2-p-800.webp 800w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bb9740ace5d22b1065c_work-vignette-utopia-V2-p-1080.webp 1080w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bb9740ace5d22b1065c_work-vignette-utopia-V2.webp 1600w',
   },
   {
-    title: 'Aurbse',
+    title: 'Washing Machine',
     description: 'A living instrument for reading territory. ',
     href: 'works/aurbse.html',
     imgSrc: 'https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bce1522d2bb4973451c_work-vignette-aurbse-V2.webp',
     srcSet: 'https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bce1522d2bb4973451c_work-vignette-aurbse-V2-p-500.webp 500w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bce1522d2bb4973451c_work-vignette-aurbse-V2-p-800.webp 800w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bce1522d2bb4973451c_work-vignette-aurbse-V2-p-1080.webp 1080w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bce1522d2bb4973451c_work-vignette-aurbse-V2.webp 1500w',
   },
   {
-    title: 'In_Cognita',
+    title: 'Home Theater',
     description: 'Seize the unexpected: the invisible, made visible.',
     href: 'works/in-cognita.html',
     imgSrc: 'https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319be381e9a44c6244424b_work-vignette-in-cognita-V3.jpg',
     srcSet: 'https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319be381e9a44c6244424b_work-vignette-in-cognita-V3-p-500.jpg 500w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319be381e9a44c6244424b_work-vignette-in-cognita-V3-p-800.jpg 800w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319be381e9a44c6244424b_work-vignette-in-cognita-V3-p-1080.jpg 1080w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319be381e9a44c6244424b_work-vignette-in-cognita-V3-p-1600.jpg 1600w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319be381e9a44c6244424b_work-vignette-in-cognita-V3.jpg 1800w',
   },
   {
-    title: 'Lgm',
+    title: 'Refrigerator',
     description: 'Swiss clarity for French engineering.',
     href: 'works/lgm.html',
     imgSrc: 'https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319c01066b4f2379f3db78_work-vignette-lgm-V2.jpg',
     srcSet: 'https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319c01066b4f2379f3db78_work-vignette-lgm-V2-p-500.jpg 500w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319c01066b4f2379f3db78_work-vignette-lgm-V2-p-800.jpg 800w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319c01066b4f2379f3db78_work-vignette-lgm-V2-p-1080.jpg 1080w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319c01066b4f2379f3db78_work-vignette-lgm-V2.jpg 1400w',
   },
   {
-    title: 'Haptify',
-    description: 'Branding the forgotten sense.',
+    title: 'Home Appliances',
+    description: 'mr plus .',
     href: 'works/haptify.html',
     imgSrc: 'https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bf45a0a1fa70477531a_work-vignette-haptify-V2.webp',
     srcSet: 'https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bf45a0a1fa70477531a_work-vignette-haptify-V2-p-500.webp 500w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bf45a0a1fa70477531a_work-vignette-haptify-V2-p-800.webp 800w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bf45a0a1fa70477531a_work-vignette-haptify-V2-p-1080.webp 1080w, https://cdn.prod.website-files.com/6a2679b9acc91890e34df140/6a319bf45a0a1fa70477531a_work-vignette-haptify-V2.webp 1400w',

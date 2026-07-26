@@ -5,15 +5,15 @@ import useParallax from '../hooks/useParallax';
 import useFormesCursor from '../hooks/useFormesCursor';
 
 const SERVICES = [
-  'Brand identities',
-  'Campaigns',
+  'Tv',
+  'Speakers',
   'Digital experiences',
-  'Events',
+  'Washing Machines',
   'Visual systems',
 ];
 
-const FOUNDERS = ['Sara Guedj', 'Anne-Sophie Do', 'Gabriel Guedj', 'Guillaume Fayolle'];
-const CREATIVE_PARTNERS = ['Pierre Patrault', 'Thomas Carré', 'Guillaume Perrette'];
+const FOUNDERS = ['Haffy', 'Anees', 'Gafoor', 'Badharudheen'];
+const CREATIVE_PARTNERS = ['Bigrip', 'Kiran', 'The Techinicians','The Best'];
 
 export default function StudioInfoSection() {
   const sectionRef = useRef(null);
@@ -30,7 +30,7 @@ export default function StudioInfoSection() {
 
         {/* Studio intro text */}
         <div className="info-w p-l">
-          <div line="">( The Studio )</div>
+          <div line="">( The Hub )</div>
           <div line="" id="w-node-_3bffa28f-e2c9-e1ae-1640-a1877cc8ebf8-78a9d1a3" className="text-block-7">
             We called it Nothin' because it started as a paradox, an empty space open enough to become anything: a campaign, a space, an event, a system...
           </div>
@@ -77,7 +77,7 @@ export default function StudioInfoSection() {
         <div className="space-87"></div>
 
         <h2 line="" className="h1-home">
-          Forms follow <br />perspective.
+          The Ultimate<br />Hub.
         </h2>
 
         <div className="space-87"></div>
@@ -86,7 +86,7 @@ export default function StudioInfoSection() {
         <div className="infobusiness-grid">
           <div id="w-node-_873b8711-445d-2907-3f1f-fca36caf4d24-78a9d1a3" className="img-block-grid">
             <div id="w-node-_873b8711-445d-2907-3f1f-fca36caf4d25-78a9d1a3" className="info-grid-left">
-              <div line="" className="text-block-4">We design :</div>
+              <div line="" className="text-block-4">We Have:</div>
               <div className="fake-img"></div>
             </div>
             <div className="info-grid-right">
@@ -100,13 +100,13 @@ export default function StudioInfoSection() {
                   ))}
                 </div>
                 <div line="" className="hide-tablet">
-                  Perspective is where strategy <br />meets visual culture.
+                 Experience the best <br />meets visual culture.
                 </div>
               </div>
             </div>
           </div>
           <div line="" id="w-node-_6684bafa-bc0c-93bc-385e-a867f46e25c6-78a9d1a3" className="hide-desk">
-            Perspective is where strategy <br />meets visual culture.
+            Experience the best<br />meets visual culture.
           </div>
         </div>
 

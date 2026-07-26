@@ -14,8 +14,8 @@ export default function ShowreelSection() {
         <div className="space-150 mob-50"></div>
 
         <h2 line="" className="h1-home balance">
-          Most brands produce content.<br />
-          We prefer ideas.
+          Most brands produces appliances.<br />
+          We deliver innovations & ideas.
         </h2>
 
         <div className="space-65"></div>
@@ -36,9 +36,7 @@ export default function ShowreelSection() {
           <div className="video-showreel-flip p-m">
             <div delay="0.2" line="">( The step aside )</div>
             <div delay="0.2" line="" className="text-block-2">
-              In a world of infinite images, the rare thing is clarity. Images
-              defend ideas, experiences shift perception, and brands change how
-              people see the world.
+              In a world of constant noise, the rare thing is peace of mind. Efficiency creates time, intuitive design shapes comfort, and great electronics change how people live every day.
             </div>
           </div>
         </div>

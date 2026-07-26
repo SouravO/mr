@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="div-block-7">
             <div opacity="" className="div-block-6 mob">
               <a href="https://calendly.com/hello-noth/30min" target="_blank" rel="noreferrer" className="btn w-inline-block">
-                <div className="btn__text"><p className="btn__text-p">book a call</p></div>
+                <div className="btn__text"><p className="btn__text-p">Shop Now</p></div>
                 <div className="arrow-w">
                   <div className="arrow">
                     <div className="line-arrow"></div>
@@ -59,10 +59,10 @@ export default function Footer() {
           <div className="space-12"></div>
         </div>
         <div className="footer-info-w">
-          <h2 className="footer-info">©2026 — Founded by Sara Guedj </h2>
-          <h2 className="footer-info hide-tablet">Site by <a href="https://fr.linkedin.com/in/pierre-patrault-7070a536" target="_blank" rel="noreferrer">Pierre Patrault</a> &amp; <a href="https://www.linkedin.com/in/thomas-carre/" target="_blank" rel="noreferrer">Thomas Carré</a></h2>
+          <h2 className="footer-info">©2026 — Coded by Bigrip </h2>
+          <h2 className="footer-info hide-tablet">Site by <a href="" target="_blank" rel="noreferrer">Bigrip</a> &amp; <a href="" target="_blank" rel="noreferrer">Rip Big</a></h2>
           <div className="lang-footer">
-            <h2 className="footer-info hide-tablet">Visuals by <a href="https://www.linkedin.com/in/guillaume-perrette-02168474/" target="_blank" rel="noreferrer">Guillaume Perrette</a></h2>
+            <h2 className="footer-info hide-tablet">Visuals by <a href="" target="_blank" rel="noreferrer">Bigrip</a></h2>
             <a href="#" className="link-lang hide-tablet w-inline-block"><div>EN</div></a>
           </div>
         </div>
