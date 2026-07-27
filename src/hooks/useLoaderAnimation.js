@@ -88,7 +88,7 @@ export default function useLoaderAnimation(containerRef) {
   // ──────────────── Hero reveal (tf) ──────────────────────────
   const revealHero = useCallback(() => {
     const heroSvg = document.querySelector('.nothin-hero-svg');
-    const paths = heroSvg ? [...heroSvg.querySelectorAll('path:not(.nothin-apos)')] : [];
+    const paths = heroSvg ? [...heroSvg.querySelectorAll('path:not(.nothin-apos), text')] : [];
     const apos = heroSvg ? heroSvg.querySelector('.nothin-apos') : null;
 
     // Dispatch start event
@@ -317,7 +317,7 @@ export default function useLoaderAnimation(containerRef) {
     // ── Hide hero SVG paths initially ──
     const heroSvg = document.querySelector('.nothin-hero-svg');
     if (heroSvg) {
-      const heroPaths = heroSvg.querySelectorAll('path:not(.nothin-apos)');
+      const heroPaths = heroSvg.querySelectorAll('path:not(.nothin-apos), text');
       const heroApos = heroSvg.querySelector('.nothin-apos');
       gsap.set(heroPaths, { autoAlpha: 0 });
       if (heroApos) gsap.set(heroApos, { autoAlpha: 0 });
