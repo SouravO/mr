@@ -175,6 +175,133 @@ padding: 0 !important;
         overflow-y: auto !important;
     }
 }
+    /* Navigation bar mobile polish */
+    .nav-boiler {
+        padding: 0.75rem 1.25rem !important;
+        height: auto !important;
+    }
+    .nav-logo-wrap {
+        min-width: auto !important;
+        max-width: 140px !important;
+    }
+    .nav-logo {
+        height: 1.1rem !important;
+        width: auto !important;
+        max-width: 100% !important;
+    }
+
+    /* Glitch section mobile styling */
+    .section.glitch {
+        min-height: 100svh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        position: relative !important;
+        overflow: hidden !important;
+        padding: 4rem 1.25rem 2rem !important;
+        box-sizing: border-box !important;
+    }
+
+    .glitch-img-w {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 0 !important;
+    }
+
+    .glitch-img-w::after {
+        content: '' !important;
+        position: absolute !important;
+        inset: 0 !important;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.92) 100%) !important;
+        z-index: 1 !important;
+    }
+
+    .img-ascenseur {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        opacity: 0.5 !important;
+    }
+
+    .glitch-text-w {
+        position: relative !important;
+        z-index: 2 !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        min-height: 75vh !important;
+    }
+
+    .glitch-text-sticky-w {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        min-height: auto !important;
+        position: relative !important;
+        top: auto !important;
+    }
+
+    /* Hide messy scattered glitch text blocks on mobile */
+    .div-block-5,
+    .text-block-6 {
+        display: none !important;
+    }
+
+    .finaltext {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        text-align: center !important;
+        font-size: clamp(1.5rem, 6vw, 2.5rem) !important;
+        font-weight: 500 !important;
+        line-height: 1.25 !important;
+        letter-spacing: -0.01em !important;
+        color: #ffffff !important;
+        max-width: 90% !important;
+        margin: 2rem auto !important;
+        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8) !important;
+    }
+
+    .img-glitch-w {
+        position: relative !important;
+        inset: auto !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 1rem !important;
+        width: 100% !important;
+        margin-top: auto !important;
+        background: transparent !important;
+        padding: 0 !important;
+    }
+
+    .merguez,
+    .ballon {
+        width: 45% !important;
+        max-width: 160px !important;
+        height: 120px !important;
+        border-radius: 12px !important;
+        overflow: hidden !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
+        margin: 0 !important;
+    }
+
+    .merguez-img,
+    .ballon-img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+}
 @media screen and (max-width: 767px) {
     .hide-landscape{
       display: none !important;
@@ -201,18 +328,6 @@ padding: 0 !important;
       min-height: 24rem !important;
       max-width: 100% !important;
       overflow: hidden !important;
-    }
-    .img-glitch-w {
-      flex-direction: column !important;
-      align-items: center !important;
-      gap: 2rem !important;
-      position: relative !important;
-    }
-    .merguez, .ballon {
-      width: 100% !important;
-      max-width: 18rem !important;
-      height: auto !important;
-      margin-bottom: 0 !important;
     }
 }
 @media screen and (max-width: 479px) {
