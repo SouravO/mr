@@ -96,14 +96,11 @@ html, body, #root, .page-wrapper, .main-wrapper {
 
   /* 5. Glitch Section Mobile Redesign */
   .section.glitch {
-    min-height: 100svh !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
+    width: 100% !important;
+    height: 100vh !important;
     position: relative !important;
     overflow: hidden !important;
-    padding: 4rem 1.25rem 2rem !important;
-    box-sizing: border-box !important;
+    background-color: #000000 !important;
   }
 
   .glitch-img-w {
@@ -111,95 +108,147 @@ html, body, #root, .page-wrapper, .main-wrapper {
     inset: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    z-index: 0 !important;
+    z-index: 1 !important;
   }
 
   .glitch-img-w::after {
     content: '' !important;
     position: absolute !important;
     inset: 0 !important;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.92) 100%) !important;
-    z-index: 1 !important;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%) !important;
+    z-index: 2 !important;
   }
 
   .img-ascenseur {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    opacity: 0.5 !important;
+    opacity: 0.8 !important;
   }
 
   .glitch-text-w {
-    position: relative !important;
-    z-index: 2 !important;
+    position: absolute !important;
+    inset: 0 !important;
     width: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    min-height: 75vh !important;
+    height: 100% !important;
+    z-index: 5 !important;
   }
 
   .glitch-text-sticky-w {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
+    position: absolute !important;
+    inset: 0 !important;
     width: 100% !important;
-    min-height: auto !important;
-    position: relative !important;
-    top: auto !important;
+    height: 100% !important;
+    display: block !important;
   }
 
-  /* Hide messy scattered glitch text blocks on mobile */
-  .div-block-5,
+  .div-block-5 {
+    display: block !important;
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    pointer-events: none !important;
+  }
+
   .text-block-6 {
-    display: none !important;
+    display: block !important;
+    font-family: Ppneuemontreal Book, Arial, sans-serif !important;
+    font-size: 0.75rem !important;
+    font-weight: 400 !important;
+    line-height: 1.15 !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    pointer-events: none !important;
+    max-width: 46% !important;
+  }
+
+  .text-block-6._1 {
+    position: absolute !important;
+    top: 22% !important;
+    left: 4% !important;
+  }
+  .text-block-6._6 {
+    position: absolute !important;
+    top: 14% !important;
+    right: 4% !important;
+    text-align: right !important;
+  }
+  .text-block-6._2 {
+    position: absolute !important;
+    top: 42% !important;
+    left: 4% !important;
+  }
+  .text-block-6._3 {
+    position: absolute !important;
+    bottom: 25% !important;
+    left: 4% !important;
+  }
+  .text-block-6._4 {
+    position: absolute !important;
+    top: 48% !important;
+    right: 4% !important;
+    text-align: right !important;
   }
 
   .finaltext {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    transform: none !important;
+    position: absolute !important;
+    top: 42% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
     text-align: center !important;
-    font-size: clamp(1.5rem, 6vw, 2.5rem) !important;
+    font-size: clamp(1.2rem, 5vw, 1.8rem) !important;
     font-weight: 500 !important;
     line-height: 1.25 !important;
     letter-spacing: -0.01em !important;
     color: #ffffff !important;
-    max-width: 90% !important;
-    margin: 2rem auto !important;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8) !important;
+    width: 85% !important;
+    max-width: 320px !important;
+    z-index: 10 !important;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8) !important;
   }
 
   .img-glitch-w {
-    position: relative !important;
-    inset: auto !important;
+    position: absolute !important;
+    bottom: 1.5rem !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
     display: flex !important;
     flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 1rem !important;
-    width: 100% !important;
-    margin-top: auto !important;
-    background: transparent !important;
-    padding: 0 !important;
+    justify-content: space-between !important;
+    align-items: flex-end !important;
+    padding: 0 1rem !important;
+    box-sizing: border-box !important;
+    z-index: 8 !important;
+    pointer-events: none !important;
   }
 
-  .merguez,
-  .ballon {
-    width: 45% !important;
+  .merguez {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 46% !important;
     max-width: 160px !important;
-    height: 120px !important;
-    border-radius: 12px !important;
+    height: auto !important;
+    border-radius: 4px !important;
     overflow: hidden !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6) !important;
     margin: 0 !important;
-    align-self: center !important;
+  }
+
+  .ballon {
+    position: relative !important;
+    bottom: auto !important;
+    right: auto !important;
+    width: 38% !important;
+    max-width: 130px !important;
+    height: auto !important;
+    border-radius: 4px !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6) !important;
+    margin: 0 !important;
   }
 
   .merguez-img,
@@ -207,6 +256,7 @@ html, body, #root, .page-wrapper, .main-wrapper {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
+    display: block !important;
   }
 }
 

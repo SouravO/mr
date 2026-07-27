@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import useTextReveal from '../hooks/useTextReveal';
 import useParallax from '../hooks/useParallax';
+import useGlitchText from '../hooks/useGlitchText';
 
 const GLITCH_TEXT = "we are nothin'";
 const GARBLED_TEXT = "Pj(è !!\u201D .      U§hs .   jkj . k .     rh";
@@ -22,6 +23,7 @@ export default function GlitchSection() {
 
   useTextReveal(sectionRef);
   useParallax(sectionRef);
+  useGlitchText(sectionRef);
 
   return (
     <section className="section glitch" ref={sectionRef}>
