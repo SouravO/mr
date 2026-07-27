@@ -119,15 +119,120 @@ padding: 0 !important;
     .hide, .hide-tablet {
         display: none !important;
     }
+    /* Reset Webflow node grid placements that cause 12-column squishing */
+    [id^="w-node-"] {
+        grid-column: 1 / -1 !important;
+        grid-row: auto !important;
+        grid-area: auto !important;
+        place-self: stretch !important;
+    }
+
+    .work_list,
+    .img-block-grid,
+    .infobusiness-grid,
+    .div-block-7,
+    .div-block-4 {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .work_item {
+        width: 100% !important;
+        max-width: 100% !important;
+        grid-column: 1 / -1 !important;
+    }
+
+    .video-w {
+        width: 100% !important;
+        max-width: 100% !important;
+        transform: none !important;
+    }
+
+    .h1-home {
+        font-size: clamp(2.2rem, 7vw, 5rem) !important;
+        line-height: 1.08 !important;
+    }
+    .h3-style {
+        font-size: clamp(1.4rem, 4.5vw, 2.5rem) !important;
+        line-height: 1.15 !important;
+    }
+    .p-l {
+        font-size: clamp(1.1rem, 3.5vw, 1.5625rem) !important;
+        line-height: 1.2 !important;
+    }
+    .menu_wrapper {
+        z-index: 1002 !important;
+        background-color: #000000 !important;
+        position: fixed !important;
+        inset: 0 !important;
+        width: 100vw !important;
+        height: 100svh !important;
+        padding: 2rem 1.5rem !important;
+        box-sizing: border-box !important;
+        overflow-y: auto !important;
+    }
 }
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .hide-landscape{
       display: none !important;
     }
+    .section-fake-hero {
+      padding: 1.5rem 1rem !important;
+    }
+    .works-word-w {
+      top: 1rem !important;
+    }
+    .titile-section-work {
+      margin-bottom: 2.5rem !important;
+      padding-right: 0 !important;
+    }
+    .img-block-left {
+      margin-right: 0 !important;
+    }
+    .img-block-right-w {
+      width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 16 / 10 !important;
+    }
+    .formes-w {
+      min-height: 24rem !important;
+      max-width: 100% !important;
+      overflow: hidden !important;
+    }
+    .img-glitch-w {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 2rem !important;
+      position: relative !important;
+    }
+    .merguez, .ballon {
+      width: 100% !important;
+      max-width: 18rem !important;
+      height: auto !important;
+      margin-bottom: 0 !important;
+    }
 }
-  @media screen and (max-width: 479px) {
+@media screen and (max-width: 479px) {
     .hide-mobile{
       display: none !important;
+    }
+    .btn {
+      width: 100% !important;
+      box-sizing: border-box !important;
+      justify-content: space-between !important;
+    }
+    .div-block-6.mob {
+      flex-direction: column !important;
+      width: 100% !important;
+      gap: 1rem !important;
+    }
+    .footer-info-w {
+      flex-direction: column !important;
+      gap: 0.75rem !important;
+      text-align: center !important;
     }
 }
 `}</style>

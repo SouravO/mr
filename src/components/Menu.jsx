@@ -12,6 +12,7 @@ export default function Menu() {
         <div className="link-menu">
           <a href="#works" className="link-mob w-inline-block"><div>works</div></a>
           <a href="#studio-video" className="link-mob w-inline-block"><div>studio</div></a>
+          <a href="#footer" className="link-mob w-inline-block"><div>contact</div></a>
         </div>
         <div className="link-btn-menu">
           <a href="https://calendly.com/hello-noth/30min" target="_blank" rel="noreferrer" className="btn mob-menu w-inline-block">

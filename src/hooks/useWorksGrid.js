@@ -62,20 +62,16 @@ export default function useWorksGrid(worksSectionRef) {
           item.style.alignSelf = spec.alignSelf;
           if (imgW) imgW.style.height = spec.imgH;
         } else {
-          const spec = MOBILE_GRID_SPECS[i % MOBILE_GRID_SPECS.length];
-          let col = spec.col;
-          if (spec.small) {
-            col = Math.floor(i / MOBILE_GRID_SPECS.length) % 2 === 0 ? 'span 6' : 'span 6';
-          }
-          item.style.gridColumn = col;
+          item.style.gridColumn = '1 / -1';
           item.style.gridRow = 'auto';
           item.style.alignSelf = 'start';
           item.style.display = 'flex';
           item.style.flexDirection = 'column';
+          item.style.width = '100%';
           if (imgW) {
             imgW.style.width = '100%';
             imgW.style.height = 'auto';
-            imgW.style.aspectRatio = spec.ratio;
+            imgW.style.aspectRatio = '16 / 10';
           }
         }
 
