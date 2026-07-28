@@ -71,7 +71,7 @@ export default function HeroSection() {
 
       {/* Background video */}
       <video
-        src="src/assets/banner.mp4"
+        src="public/banner.mp4"
         autoPlay
         loop
         muted
