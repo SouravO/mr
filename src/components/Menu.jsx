@@ -15,7 +15,7 @@ export default function Menu() {
           <a href="#footer" className="link-mob w-inline-block"><div>contact</div></a>
         </div>
         <div className="link-btn-menu">
-          <a href="https://calendly.com/hello-noth/30min" target="_blank" rel="noreferrer" className="btn mob-menu w-inline-block">
+          <a href="#" target="_blank" rel="noreferrer" className="btn mob-menu w-inline-block">
             <div className="btn__text"><p className="btn__text-p">Let’s chat</p></div>
             <div className="arrow-w">
               <div className="arrow black-blend">
@@ -24,7 +24,7 @@ export default function Menu() {
               </div>
             </div>
           </a>
-          <a href="mailto:hello@noth.in" className="btn email white w-inline-block">
+          <a href="#" className="btn email white w-inline-block">
             <div className="btn__text"><p className="btn__text-p">drop us an email</p></div>
             <div className="arobase">@</div>
           </a>
@@ -34,11 +34,11 @@ export default function Menu() {
         <div delay="1.5" line="" no-scroll="">Mr Plus for everything</div>
         <div delay="1.5" opacity="" no-scroll="" className="link-hero-lang-w">
           <div className="link-hero-w">
-            <a href="https://www.linkedin.com/company/nothin/" target="_blank" rel="noreferrer" className="link w-inline-block"><div>LKDN</div></a>
-            <a href="https://www.linkedin.com/company/nothin/" target="_blank" rel="noreferrer" className="link hide-tablet w-inline-block"><div>Linkedin</div></a>
+            <a href="#" target="_blank" rel="noreferrer" className="link w-inline-block"><div>LKDN</div></a>
+            <a href="#" target="_blank" rel="noreferrer" className="link hide-tablet w-inline-block"><div>Linkedin</div></a>
             <a href="#" className="link pointer-none w-inline-block"><div>/</div></a>
-            <a href="https://www.instagram.com/nooothinatall/" target="_blank" rel="noreferrer" className="link hide-tablet w-inline-block"><div>Instagram</div></a>
-            <a href="https://www.instagram.com/nooothinatall/" target="_blank" rel="noreferrer" className="link w-inline-block"><div>insta</div></a>
+            <a href="#" target="_blank" rel="noreferrer" className="link hide-tablet w-inline-block"><div>Instagram</div></a>
+            <a href="#" target="_blank" rel="noreferrer" className="link w-inline-block"><div>insta</div></a>
           </div>
           <a href="#" className="link-lang mob w-inline-block"><div>EN</div></a>
         </div>

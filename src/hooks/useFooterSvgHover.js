@@ -1,5 +1,5 @@
 /**
- * useFooterSvgHover – Stagger reveal of the footer NOTHIN' SVG letters
+ * useFooterSvgHover – Stagger reveal of the footer MR PLUS SVG letters
  * and interactive letter bounce animation on hover.
  *
  * Extracted from main.js:
@@ -28,8 +28,8 @@ export default function useFooterSvgHover(containerRef) {
       if (svg) svg.style.overflow = 'hidden';
       footerSvgW.style.overflow = 'hidden';
 
-      const lastPath = paths[paths.length - 1]; // Apostrophe
-      const mainPaths = paths.slice(0, -1);     // NOTHIN letters
+      const lastPath = paths[paths.length - 1]; // Dot
+      const mainPaths = paths.slice(0, -1);     // MR PLUS letters
 
       gsap.set(mainPaths, { autoAlpha: 1, yPercent: 120 });
       gsap.set(lastPath, { autoAlpha: 1, scale: 0 });

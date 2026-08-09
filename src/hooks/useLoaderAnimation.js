@@ -3,7 +3,7 @@
  *
  * Extracted from main.js (byte offsets 169632–175100):
  *   - State variables: hc, vs, fc, za, Va, Fr, dc (169632–169834)
- *   - Session gate: fM(), dM() — key "nothin:loader-played" (169834–169908)
+ *   - Session gate: fM(), dM() — key "mrplus:loader-played" (169834–169908)
  *   - Image timing: hM() — sinusoidal interval curve (169632)
  *   - Counter: mM() — 100→0 countdown (169990)
  *   - Image cycling: O_() — carousel loop (171700)
@@ -21,7 +21,7 @@ import gsap from 'gsap';
 
 // ───────────────────── Constants from main.js ─────────────────────
 
-const SESSION_KEY = 'nothin:loader-played'; // F_ in main.js
+const SESSION_KEY = 'mrplus:loader-played';
 const TOTAL_CYCLE_DURATION = 5000;          // ef = 5e3
 const INTERVAL_MIN = 100;                   // N_ = 100
 const INTERVAL_MAX = 500;                   // uM = 500
@@ -58,13 +58,10 @@ function getInterval(elapsed) {
 export default function useLoaderAnimation(containerRef) {
   // Mutable state refs (mirror module-level vars in original)
   const imgWrapperRef = useRef(null);    // fc — .loader-img-w
-  const nLoadRef = useRef(null);         // za — .n-load SVG
-  const aposLoadRef = useRef(null);      // Va — .apos-load SVG
   const nbrWrapperRef = useRef(null);    // Fr — .loader-nbr-w
   const cycleTimeoutRef = useRef(null);  // hc — image cycling setTimeout id
   const counterTweenRef = useRef(null);  // dc — GSAP tween for number countdown
   const currentImgIdx = useRef(0);       // vs — current image index
-  const nLoadOverflowWrap = useRef(null);// the dynamically-created overflow wrapper
 
   // ──────────────── Number countdown (mM) ──────────────────────
   const startCountdown = useCallback(() => {
@@ -87,34 +84,12 @@ export default function useLoaderAnimation(containerRef) {
 
   // ──────────────── Hero reveal (tf) ──────────────────────────
   const revealHero = useCallback(() => {
-    const heroSvg = document.querySelector('.nothin-hero-svg');
-    const paths = heroSvg ? [...heroSvg.querySelectorAll('path:not(.nothin-apos), text')] : [];
-    const apos = heroSvg ? heroSvg.querySelector('.nothin-apos') : null;
+    const heroSvg = document.querySelector('.mrplus-hero-svg');
+    const paths = heroSvg ? [...heroSvg.querySelectorAll('path:not(.mrplus-apos), text')] : [];
+    const apos = heroSvg ? heroSvg.querySelector('.mrplus-apos') : null;
 
     // Dispatch start event
     window.dispatchEvent(new CustomEvent('loader:hero-reveal-start'));
-
-    // Slide N-load out
-    const nLoad = nLoadRef.current;
-    if (nLoad) {
-      gsap.to(nLoad, {
-        yPercent: 100,
-        duration: 1,
-        ease: 'power4.inOut',
-        onComplete: () => gsap.set(nLoad, { opacity: 0 }),
-      });
-    }
-
-    // Scale apostrophe out
-    const aposLoad = aposLoadRef.current;
-    if (aposLoad) {
-      gsap.to(aposLoad, {
-        scale: 0,
-        duration: 1,
-        ease: 'power4.inOut',
-        onComplete: () => gsap.set(aposLoad, { opacity: 0 }),
-      });
-    }
 
     // Stagger hero SVG paths in (shuffled)
     if (paths.length) {
@@ -283,8 +258,6 @@ export default function useLoaderAnimation(containerRef) {
     if (hasLoaderPlayed()) {
       gsap.set(loader, { display: 'none' });
       imgWrapperRef.current = null;
-      nLoadRef.current = null;
-      aposLoadRef.current = null;
       nbrWrapperRef.current = null;
       // Skip straight to hero reveal
       revealHero();
@@ -292,15 +265,11 @@ export default function useLoaderAnimation(containerRef) {
     }
 
     // ── Query loader DOM ──
-    const nLoad = loader.querySelector('.n-load');
-    const aposLoad = loader.querySelector('.apos-load');
     const images = loader.querySelectorAll('.loader-img');
     const imgW = loader.querySelector('.loader-img-w');
     const nbrW = loader.querySelector('.loader-nbr-w');
 
     imgWrapperRef.current = imgW;
-    nLoadRef.current = nLoad;
-    aposLoadRef.current = aposLoad;
     nbrWrapperRef.current = nbrW;
 
     // Init number display
@@ -309,49 +278,22 @@ export default function useLoaderAnimation(containerRef) {
       nbrW.textContent = '100';
     }
 
-    if (!nLoad || images.length === 0) return;
+    if (images.length === 0) return;
 
     // Mark session as played
     markLoaderPlayed();
 
     // ── Hide hero SVG paths initially ──
-    const heroSvg = document.querySelector('.nothin-hero-svg');
+    const heroSvg = document.querySelector('.mrplus-hero-svg');
     if (heroSvg) {
-      const heroPaths = heroSvg.querySelectorAll('path:not(.nothin-apos), text');
-      const heroApos = heroSvg.querySelector('.nothin-apos');
+      const heroPaths = heroSvg.querySelectorAll('path:not(.mrplus-apos), text');
+      const heroApos = heroSvg.querySelector('.mrplus-apos');
       gsap.set(heroPaths, { autoAlpha: 0 });
       if (heroApos) gsap.set(heroApos, { autoAlpha: 0 });
     }
 
-    // ── Wrap N-load in overflow-hidden flex container ──
-    const overflowWrap = document.createElement('div');
-    overflowWrap.style.cssText = 'overflow:hidden;display:flex;';
-    nLoad.parentNode.insertBefore(overflowWrap, nLoad);
-    overflowWrap.appendChild(nLoad);
-    nLoadOverflowWrap.current = overflowWrap;
-
-    // Set initial states
-    gsap.set(nLoad, { yPercent: 100, opacity: 0 });
-    if (aposLoad) gsap.set(aposLoad, { scale: 0, transformOrigin: 'center center' });
-
-    // ── Animate N-load in ──
-    const entryDuration = 1; // const c = 1 in original
-    gsap.to(nLoad, {
-      opacity: 1,
-      yPercent: 0,
-      duration: entryDuration,
-      ease: 'power4.inOut',
-      onComplete: () => startImageCarousel(images, imgW),
-    });
-
-    // ── Animate apostrophe in ──
-    if (aposLoad) {
-      gsap.to(aposLoad, {
-        scale: 1,
-        duration: entryDuration,
-        ease: 'power4.inOut',
-      });
-    }
+    // ── Start image carousel ──
+    startImageCarousel(images, imgW);
 
     // ── Cleanup (mirrors xM) ──
     return () => {
@@ -364,17 +306,6 @@ export default function useLoaderAnimation(containerRef) {
         counterTweenRef.current = null;
       }
       currentImgIdx.current = 0;
-
-      // Clean up dynamically created overflow wrapper
-      if (nLoadOverflowWrap.current && nLoadOverflowWrap.current.parentNode) {
-        const wrap = nLoadOverflowWrap.current;
-        // Move nLoad back out of wrapper before removing
-        if (wrap.firstChild && wrap.parentNode) {
-          wrap.parentNode.insertBefore(wrap.firstChild, wrap);
-          wrap.parentNode.removeChild(wrap);
-        }
-        nLoadOverflowWrap.current = null;
-      }
     };
   }, [containerRef, revealHero, startImageCarousel]);
 }

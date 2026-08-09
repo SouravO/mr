@@ -6,7 +6,7 @@
  * and function NC() at byte offset 750858.
  *
  * The original mx() function:
- *   1. Finds .nothin-hero-svg
+ *   1. Finds .mrplus-hero-svg
  *   2. Finds .section-w .video-hero-bg
  *   3. Calls dA({containerSelector:".section-w"}) → creates fluid engine
  *   4. Calls await mA({base: svgEl, baseBg: "#ffffff", reveal: "rgba(0,0,0,0)", hideOriginal: true})
@@ -45,7 +45,7 @@ function autoplayVideo(video) {
  * Mirrors async function mx() from main.js (byte offset 750430).
  */
 async function initHeroFluidSim() {
-  const heroSvg = document.querySelector('.nothin-hero-svg');
+  const heroSvg = document.querySelector('.mrplus-hero-svg');
   if (!heroSvg) return;
 
   const videoBg = document.querySelector('.section-w .video-hero-bg');

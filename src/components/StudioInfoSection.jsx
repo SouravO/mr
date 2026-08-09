@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { NothinLetterSvgs } from './NothinLetterSvgs';
+import { MrPlusLetterSvgs } from './MrPlusLetterSvgs';
 import useTextReveal from '../hooks/useTextReveal';
 import useParallax from '../hooks/useParallax';
 import useFormesCursor from '../hooks/useFormesCursor';
@@ -32,7 +32,7 @@ export default function StudioInfoSection() {
         <div className="info-w p-l">
           <div line="">( The Hub )</div>
           <div line="" id="w-node-_3bffa28f-e2c9-e1ae-1640-a1877cc8ebf8-78a9d1a3" className="text-block-7">
-            We called it Nothin' because it started as a paradox, an empty space open enough to become anything: a campaign, a space, an event, a system...
+            We called it Mr Plus because it started as a paradox, a space open enough to become anything: a campaign, a space, an event, a system...
           </div>
 
           <div className="space-24 hide-landscape"></div>
@@ -120,15 +120,15 @@ export default function StudioInfoSection() {
           <img src="https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a101bf33377567d8f2bd507_asterix.webp" loading="lazy" sizes="100vw" srcSet="https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a101bf33377567d8f2bd507_asterix-p-500.webp 500w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a101bf33377567d8f2bd507_asterix-p-800.webp 800w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a101bf33377567d8f2bd507_asterix-p-1080.webp 1080w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a101bf33377567d8f2bd507_asterix-p-1600.webp 1600w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a101bf33377567d8f2bd507_asterix.webp 2048w" alt="Shiny black balloon shaped like an asterisk symbol on a white background." className="etoile" />
           <img src="https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a101bf4026551468ed05521_coeur-bulle-nb.webp" loading="lazy" sizes="100vw" srcSet="https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a101bf4026551468ed05521_coeur-bulle-nb-p-500.webp 500w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a101bf4026551468ed05521_coeur-bulle-nb-p-800.webp 800w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a101bf4026551468ed05521_coeur-bulle-nb-p-1080.webp 1080w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a101bf4026551468ed05521_coeur-bulle-nb-p-1600.webp 1600w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a101bf4026551468ed05521_coeur-bulle-nb-p-2000.webp 2000w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a101bf4026551468ed05521_coeur-bulle-nb.webp 2048w" alt="Heart-shaped object made of transparent bubble wrap in black and white." className="coeur-copy" />
 
-          {/* Scattered NOTHIN' letter SVGs */}
-          <NothinLetterSvgs />
+          {/* Scattered MR PLUS letter SVGs */}
+          <MrPlusLetterSvgs />
         </div>
 
         {/* Team credits */}
         <div className="infobusiness-grid">
           <div id="w-node-_5df3fb26-e0d9-a608-cc8d-469d5b5a1816-78a9d1a3" className="img-block-grid p-s">
             <div id="w-node-_5df3fb26-e0d9-a608-cc8d-469d5b5a1817-78a9d1a3" className="info-grid-left">
-              <div line="" className="text-block-4 marg-40">Nothin' without people :</div>
+              <div line="" className="text-block-4 marg-40">Mr Plus without people :</div>
               <div className="fake-img"></div>
             </div>
             <div className="info-grid-right second">

@@ -3,7 +3,7 @@ import useTextReveal from '../hooks/useTextReveal';
 import useParallax from '../hooks/useParallax';
 import useGlitchText from '../hooks/useGlitchText';
 
-const GLITCH_TEXT = "we are nothin'";
+const GLITCH_TEXT = "we are mr plus";
 const GARBLED_TEXT = "Pj(è !!\u201D .      U§hs .   jkj . k .     rh";
 
 function GlitchTextBlock({ variant }) {

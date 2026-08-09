@@ -14,11 +14,12 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const CLIP_SPECS = {
-  'nav-o': { x: 241, w: 285 },
-  'nav-t': { x: 520, w: 183 },
-  'nav-h': { x: 722, w: 228 },
-  'nav-i': { x: 968, w: 72 },
-  'nav-n-last': { x: 1058, w: 230 },
+  'nav-m': { x: 20, w: 645 },
+  'nav-r': { x: 680, w: 200 },
+  'nav-p': { x: 1005, w: 150 },
+  'nav-l': { x: 1175, w: 73 },
+  'nav-u': { x: 1270, w: 185 },
+  'nav-s': { x: 1475, w: 135 },
 };
 
 function addClipPath(svg, pathEl, className) {
@@ -31,9 +32,9 @@ function addClipPath(svg, pathEl, className) {
 
   const rect = document.createElementNS(ns, 'rect');
   rect.setAttribute('x', spec.x);
-  rect.setAttribute('y', 0);
+  rect.setAttribute('y', 58);
   rect.setAttribute('width', spec.w);
-  rect.setAttribute('height', 291);
+  rect.setAttribute('height', 317);
   clipPath.appendChild(rect);
 
   let defs = svg.querySelector('defs');
@@ -59,7 +60,7 @@ export default function useNavLogoMorph(navLogoWrapRef) {
       if (!svg) return;
 
       const apos = svg.querySelector('.nav-apos');
-      const letterClasses = ['nav-o', 'nav-t', 'nav-h', 'nav-i', 'nav-n-last'];
+      const letterClasses = ['nav-m', 'nav-r', 'nav-p', 'nav-l', 'nav-u', 'nav-s'];
       const letterEls = letterClasses.map((cls) => svg.querySelector(`.${cls}`));
 
       // Inject clipPaths for letter sliding
@@ -196,7 +197,7 @@ export default function useNavLogoMorph(navLogoWrapRef) {
       }
 
       // Scroll trigger for nav reveal
-      const hasHeroSvg = !!document.querySelector('.nothin-hero-svg');
+      const hasHeroSvg = !!document.querySelector('.mrplus-hero-svg');
       gsap.set(wrap, { autoAlpha: 0 });
       let isVisible = false;
 

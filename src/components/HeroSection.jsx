@@ -17,14 +17,14 @@ export default function HeroSection() {
         <div className="div-block">
           <div delay="1.5" line="" no-scroll="" className="p-l">
             Not a style, a perspective.<br />
-            Because Nothin' is Everythin'.
+            Because Mr Plus is Everything.
           </div>
           <div className="space-24"></div>
           <a
             delay="2"
             opacity=""
             no-scroll=""
-            href="https://calendly.com/hello-noth/30min"
+            href="#"
             target="_blank"
             rel="noreferrer"
             className="btn black-blend w-inline-block"
@@ -46,19 +46,19 @@ export default function HeroSection() {
           <div delay="1.5" line="" no-scroll="">Mr Plus for everything</div>
           <div delay="1.5" opacity="" no-scroll="" className="link-hero-lang-w">
             <div className="link-hero-w">
-              <a href="https://www.linkedin.com/company/nothin/" target="_blank" rel="noreferrer" className="link hide-desk w-inline-block">
+              <a href="#" target="_blank" rel="noreferrer" className="link hide-desk w-inline-block">
                 <div>LKDN</div>
               </a>
-              <a href="https://www.linkedin.com/company/nothin/" target="_blank" rel="noreferrer" className="link hide-tablet w-inline-block">
+              <a href="#" target="_blank" rel="noreferrer" className="link hide-tablet w-inline-block">
                 <div>Linkedin</div>
               </a>
               <a href="#" className="link pointer-none w-inline-block">
                 <div>/</div>
               </a>
-              <a href="https://www.instagram.com/nooothinatall/" target="_blank" rel="noreferrer" className="link hide-tablet w-inline-block">
+              <a href="#" target="_blank" rel="noreferrer" className="link hide-tablet w-inline-block">
                 <div className="text-block-10">Instagram</div>
               </a>
-              <a href="https://www.instagram.com/nooothinatall/" target="_blank" rel="noreferrer" className="link hide-desk w-inline-block">
+              <a href="#" target="_blank" rel="noreferrer" className="link hide-desk w-inline-block">
                 <div>insta</div>
               </a>
             </div>
@@ -80,11 +80,11 @@ export default function HeroSection() {
         className="video-hero-bg"
       ></video>
 
-      {/* Giant NOTHIN' wordmark */}
+      {/* Giant MR PLUS wordmark */}
       <section className="section hero-home">
         <div className="container hero-home">
-          <div className="nothin-hero-w">
-            <NothinHeroSvg />
+          <div className="mrplus-hero-w">
+            <MrPlusHeroSvg />
           </div>
         </div>
       </section>
@@ -92,14 +92,14 @@ export default function HeroSection() {
   );
 }
 
-function NothinHeroSvg() {
+function MrPlusHeroSvg() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="100%"
       viewBox="0 0 1620 420"
       fill="none"
-      className="nothin-hero-svg mrplus-hero-svg"
+      className="mrplus-hero-svg"
     >
       <g fill="currentColor">
         {/* Letter 'M' - Slanted double arch */}
