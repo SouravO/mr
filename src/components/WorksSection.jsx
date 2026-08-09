@@ -15,7 +15,7 @@ const WORKS = [
     title: 'Washing Machine',
     // description: 'A living instrument for reading territory. ',
     href: 'works/aurbse.html',
-    imgSrc: '/assets/Artboard 16@4x-80.jpg',
+    imgSrc: '/assets/Artboard 19@4x-80.jpg',
     srcSet: '',
   }, 
   {
@@ -26,7 +26,7 @@ const WORKS = [
     srcSet: '',
   },
   {
-    title: 'Vaccum Cleaner',
+    title: 'Vacuum Cleaner',
     // description: 'Swiss clarity for French engineering.',
     href: 'works/lgm.html',
     imgSrc: '/assets/Artboard 18@4x-80.jpg',
@@ -67,7 +67,7 @@ function WorkItem({ title, description, href, imgSrc, srcSet }) {
           />
         </div>
         <div className="cursor-work">
-          <div>explore</div>
+          <div>view</div>
           <div className="w-embed">
             <ExploreArrow />
           </div>
@@ -111,8 +111,8 @@ export default function WorksSection() {
         {/* Section heading */}
         <div className="titile-section-work">
           <h2 line="" className="h3-style">
-            Good brands communicate.<br />
-            Great brands surprise.
+            Good brands perform.<br />
+            Great brands earn trust.
           </h2>
         </div>
 
@@ -131,7 +131,7 @@ export default function WorksSection() {
         {/* "View all" + project count */}
         <div opacity="" className="work-view-all-w">
           <a href="works.html" className="btn view-all-btn w-inline-block">
-            <div>View all</div>
+            <div>View all products</div>
             <div className="code-embed-2 w-embed">
               <svg className="arrow-icon" width="24" height="12" viewBox="-8 -1 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <polyline className="arrow-shaft" points="0.5,0 0.5,7.5 15.5,7.5" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round" />

@@ -16,7 +16,7 @@ export default function HeroSection() {
         {/* Tagline & CTA */}
         <div className="div-block">
           <div delay="1.5" line="" no-scroll="" className="p-l">
-            Not a style, a perspective.<br />
+            Quality you can trust.<br />
             Because Mr Plus is Everything.
           </div>
           <div className="space-24"></div>

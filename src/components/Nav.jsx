@@ -37,8 +37,8 @@ export default function Nav() {
           </svg>
         </div>
         <div className="menu-links-w">
-          <a href="#works" className="link-boiler">works</a>
-          <a href="#studio-video" className="link-boiler">STUDIO</a>
+          <a href="#works" className="link-boiler">products</a>
+          <a href="#studio-video" className="link-boiler">about</a>
           <a href="#footer" className="link-boiler">contact</a>
         </div>
       </div>

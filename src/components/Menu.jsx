@@ -10,8 +10,8 @@ export default function Menu() {
       <div className="fake-el-menu"></div>
       <div className="div-block-10">
         <div className="link-menu">
-          <a href="#works" className="link-mob w-inline-block"><div>works</div></a>
-          <a href="#studio-video" className="link-mob w-inline-block"><div>studio</div></a>
+          <a href="#works" className="link-mob w-inline-block"><div>products</div></a>
+          <a href="#studio-video" className="link-mob w-inline-block"><div>about</div></a>
           <a href="#footer" className="link-mob w-inline-block"><div>contact</div></a>
         </div>
         <div className="link-btn-menu">

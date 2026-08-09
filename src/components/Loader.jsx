@@ -19,7 +19,7 @@ export default function Loader() {
     <div className="loader" ref={loaderRef}>
       <div className="loader-c">
         <div className="fake-top-loader">
-          <div>This is some text inside of a div block.</div>
+          <div>Welcome to Mr Plus</div>
         </div>
         <div className="loader-anim">
           <div className="loader-img-w">

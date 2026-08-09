@@ -27,14 +27,13 @@ export default function GlitchSection() {
 
   return (
     <section className="section glitch" ref={sectionRef}>
-      {/* Elevator image */}
+      {/* Background appliance image */}
       <div className="glitch-img-w">
         <img
-          src="https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a32453603101dc16b515779_a69d519b418ba234ececf4336989bfd0_260407_NOTHIN_KV08_1X1.webp"
+          src="/assets/Artboard 15@4x-80.jpg"
           loading="lazy"
           sizes="100vw"
-          srcSet="https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a32453603101dc16b515779_a69d519b418ba234ececf4336989bfd0_260407_NOTHIN_KV08_1X1-p-500.webp 500w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a32453603101dc16b515779_a69d519b418ba234ececf4336989bfd0_260407_NOTHIN_KV08_1X1-p-800.webp 800w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a32453603101dc16b515779_a69d519b418ba234ececf4336989bfd0_260407_NOTHIN_KV08_1X1-p-1080.webp 1080w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a32453603101dc16b515779_a69d519b418ba234ececf4336989bfd0_260407_NOTHIN_KV08_1X1-p-1600.webp 1600w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a32453603101dc16b515779_a69d519b418ba234ececf4336989bfd0_260407_NOTHIN_KV08_1X1.webp 1920w"
-          alt="homme ascenseur"
+          alt="Mr Plus television"
           className="img-ascenseur"
         />
       </div>
@@ -50,11 +49,11 @@ export default function GlitchSection() {
           <div className="div-block-5"><GlitchTextBlock variant="_6" /></div>
 
           <div className="finaltext">
-            We create brand <br />
-            experiences for <br />
-            those ready to go <br />
-            beyond the <br />
-            ordinary.
+            We bring quality <br />
+            home appliances <br />
+            to every <br />
+            household across <br />
+            the region.
           </div>
         </div>
 
@@ -63,22 +62,21 @@ export default function GlitchSection() {
           <div className="merguez">
             <img
               className="merguez-img"
-              src="https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a31722974b25426299f5e83_saussice-V2.webp"
+              src="/assets/Artboard 16@4x-80.jpg"
               height="Auto"
-              alt="boite merguez"
+              alt="Mr Plus washing machine"
               parallax-img=""
               parallax-img-scrub="3"
               sizes="100vw"
               parallax-img-y="-8"
               loading="lazy"
-              srcSet="https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a31722974b25426299f5e83_saussice-V2-p-500.webp 500w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a31722974b25426299f5e83_saussice-V2.webp 600w"
             />
           </div>
           <div className="ballon">
             <img
               className="ballon-img"
-              src="https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a3172364e89f407c6f0469a_ballon-bureau-V2.webp"
-              alt="ballon sur bureau"
+              src="/assets/Artboard 18@4x-80.jpg"
+              alt="Mr Plus vacuum cleaner"
               parallax-img=""
               parallax-img-scrub="3"
               parallax-img-y="10"

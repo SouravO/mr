@@ -5,11 +5,11 @@ import useParallax from '../hooks/useParallax';
 import useFormesCursor from '../hooks/useFormesCursor';
 
 const SERVICES = [
-  'Tv',
-  'Speakers',
-  'Digital experiences',
+  'Televisions',
+  'Speakers & Audio',
+  'Kitchen Appliances',
   'Washing Machines',
-  'Visual systems',
+  'Refrigerators',
 ];
 
 const FOUNDERS = ['Haffy', 'Anees', 'Gafoor', 'Badharudheen'];
@@ -30,9 +30,9 @@ export default function StudioInfoSection() {
 
         {/* Studio intro text */}
         <div className="info-w p-l">
-          <div line="">( The Hub )</div>
+          <div line="">( The Distributor )</div>
           <div line="" id="w-node-_3bffa28f-e2c9-e1ae-1640-a1877cc8ebf8-78a9d1a3" className="text-block-7">
-            We called it Mr Plus because it started as a paradox, a space open enough to become anything: a campaign, a space, an event, a system...
+            Mr Plus began with a simple promise — every home deserves the best. From televisions to kitchen appliances, we bring trusted brands and quality products to homes everywhere.
           </div>
 
           <div className="space-24 hide-landscape"></div>
@@ -54,7 +54,7 @@ export default function StudioInfoSection() {
                   loading="lazy"
                 />
               </div>
-              <div className="text-block-4">or something <br />unexpected.</div>
+              <div className="text-block-4">for every room <br />of your home.</div>
             </div>
 
             <div parallax-scrub="2" parallax-y="-60" parallax="" className="img-block-right-w">
@@ -77,7 +77,7 @@ export default function StudioInfoSection() {
         <div className="space-87"></div>
 
         <h2 line="" className="h1-home">
-          The Ultimate<br />Hub.
+          The Ultimate<br />Appliance Hub.
         </h2>
 
         <div className="space-87"></div>
@@ -100,13 +100,13 @@ export default function StudioInfoSection() {
                   ))}
                 </div>
                 <div line="" className="hide-tablet">
-                 Experience the best <br />meets visual culture.
+                 The best brands <br />for your home.
                 </div>
               </div>
             </div>
           </div>
           <div line="" id="w-node-_6684bafa-bc0c-93bc-385e-a867f46e25c6-78a9d1a3" className="hide-desk">
-            Experience the best<br />meets visual culture.
+            The best brands<br />for your home.
           </div>
         </div>
 
@@ -128,7 +128,7 @@ export default function StudioInfoSection() {
         <div className="infobusiness-grid">
           <div id="w-node-_5df3fb26-e0d9-a608-cc8d-469d5b5a1816-78a9d1a3" className="img-block-grid p-s">
             <div id="w-node-_5df3fb26-e0d9-a608-cc8d-469d5b5a1817-78a9d1a3" className="info-grid-left">
-              <div line="" className="text-block-4 marg-40">Mr Plus without people :</div>
+              <div line="" className="text-block-4 marg-40">The people behind Mr Plus :</div>
               <div className="fake-img"></div>
             </div>
             <div className="info-grid-right second">

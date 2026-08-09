@@ -14,8 +14,8 @@ export default function ShowreelSection() {
         <div className="space-150 mob-50"></div>
 
         <h2 line="" className="h1-home balance">
-          Most brands produces appliances.<br />
-          We deliver innovations & ideas.
+          Every home deserves the best.<br />
+          We deliver trusted brands & innovations.
         </h2>
 
         <div className="space-65"></div>
@@ -34,7 +34,7 @@ export default function ShowreelSection() {
           </div>
 
           <div className="video-showreel-flip p-m">
-            <div delay="0.2" line="">( The step aside )</div>
+            <div delay="0.2" line="">( The promise )</div>
             <div delay="0.2" line="" className="text-block-2">
               In a world of constant noise, the rare thing is peace of mind. Efficiency creates time, intuitive design shapes comfort, and great electronics change how people live every day.
             </div>
