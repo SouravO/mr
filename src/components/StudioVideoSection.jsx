@@ -19,7 +19,7 @@ export default function StudioVideoSection() {
 
           <div className="video-w">
             <video
-              src="https://noth-in.b-cdn.net/NOTHIN_MANIFESTE_CLEAN.mp4"
+              src="/assets/Mr%20Plus%20-%20website.mp4"
               autoPlay
               loop
               muted
@@ -29,7 +29,7 @@ export default function StudioVideoSection() {
             ></video>
 
             <video
-              src="https://noth-in.b-cdn.net/NOTHIN_MANIFESTE_REFLECT_H265.mp4"
+              src="/assets/Mr%20Plus%20-%20website.mp4"
               autoPlay
               loop
               muted

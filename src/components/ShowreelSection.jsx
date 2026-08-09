@@ -23,7 +23,7 @@ export default function ShowreelSection() {
         <div className="video-showreel-w">
           <div className="video-showreel-full-w">
             <video
-              src="https://noth-in.b-cdn.net/showreel-nothin_DEF.mp4"
+              src="/assets/Mr%20Plus%20-%20website.mp4"
               autoPlay
               loop
               muted
