@@ -46,7 +46,7 @@ export default function StudioInfoSection() {
               <div className="img-block-left-w">
                 <img
                   className="image"
-                  src="https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a3171d9fb2a39d8054e9252_beton-plastic-V2.webp"
+                  src="assets/Artboard 19@4x-80.jpg"
                   alt=""
                   parallax-img=""
                   parallax-img-scrub="3"
@@ -60,14 +60,14 @@ export default function StudioInfoSection() {
             <div parallax-scrub="2" parallax-y="-60" parallax="" className="img-block-right-w">
               <img
                 className="image"
-                src="https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a317205d7b275b2d2985000_boule-chelou-coline-V2.webp"
+                src="assets/Artboard 17@4x-80.jpg"
                 alt=""
                 parallax-img=""
                 parallax-img-scrub="3"
                 sizes="100vw"
                 parallax-img-y="10"
                 loading="lazy"
-                srcSet="https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a317205d7b275b2d2985000_boule-chelou-coline-V2-p-500.webp 500w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a317205d7b275b2d2985000_boule-chelou-coline-V2-p-800.webp 800w, https://cdn.prod.website-files.com/6a0c501c42b9751b78a9d1a7/6a317205d7b275b2d2985000_boule-chelou-coline-V2.webp 1000w"
+               
               />
             </div>
           </div>
