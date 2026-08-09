@@ -32,7 +32,7 @@ export default function StudioInfoSection() {
         <div className="info-w p-l">
           <div line="">( The Distributor )</div>
           <div line="" id="w-node-_3bffa28f-e2c9-e1ae-1640-a1877cc8ebf8-78a9d1a3" className="text-block-7">
-            Mr Plus began with a simple promise — every home deserves the best. From televisions to kitchen appliances, we bring trusted brands and quality products to homes everywhere.
+            Mr Plus began with a simple promise, every home deserves the best. From televisions to kitchen appliances, we bring trusted brands and quality products to homes everywhere.
           </div>
 
           <div className="space-24 hide-landscape"></div>

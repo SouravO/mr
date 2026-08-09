@@ -15,11 +15,11 @@ export default function ShowreelSection() {
 
         <h2 line="" className="h1-home balance">
           Every home deserves the best.<br />
-          We deliver trusted brands & innovations.
+          We deliver trust & innovations.
         </h2>
 
         <div className="space-24"></div>
-        <a
+        {/* <a
           href="https://shop.mrplus.in"
           target="_blank"
           rel="noreferrer"
@@ -34,7 +34,7 @@ export default function ShowreelSection() {
               <div className="shape-arrow"></div>
             </div>
           </div>
-        </a>
+        </a> */}
 
         <div className="space-65"></div>
 
@@ -54,7 +54,7 @@ export default function ShowreelSection() {
           <div className="video-showreel-flip p-m">
             <div delay="0.2" line="">( The promise )</div>
             <div delay="0.2" line="" className="text-block-2">
-              In a world of constant noise, the rare thing is peace of mind. Efficiency creates time, intuitive design shapes comfort, and great electronics change how people live every day.
+             In a fast-paced world, comfort begins at home. We build intuitive electronics that simplify your day and elevate your space.
             </div>
           </div>
         </div>
