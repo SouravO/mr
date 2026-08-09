@@ -17,7 +17,7 @@ export default function HeroSection() {
         <div className="div-block">
           <div delay="1.5" line="" no-scroll="" className="p-l">
             Quality you can trust.<br />
-            Because Mr Plus is Everything.
+            Because Mr Plus is Everything....
           </div>
           <div className="space-24"></div>
           <a
