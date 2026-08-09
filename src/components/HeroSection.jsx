@@ -24,7 +24,7 @@ export default function HeroSection() {
             delay="2"
             opacity=""
             no-scroll=""
-            href="#"
+            href="https://shop.mrplus.in"
             target="_blank"
             rel="noreferrer"
             className="btn black-blend w-inline-block"

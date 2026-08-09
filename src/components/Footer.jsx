@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="space-24"></div>
           <div className="div-block-7">
             <div opacity="" className="div-block-6 mob">
-              <a href="#" target="_blank" rel="noreferrer" className="btn w-inline-block">
+              <a href="https://shop.mrplus.in" target="_blank" rel="noreferrer" className="btn w-inline-block">
                 <div className="btn__text"><p className="btn__text-p">Shop Now</p></div>
                 <div className="arrow-w">
                   <div className="arrow">

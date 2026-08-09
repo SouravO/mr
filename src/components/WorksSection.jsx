@@ -6,7 +6,7 @@ import useProjectNav from '../hooks/useProjectNav';
 
 const WORKS = [
   {
-    title: 'TV',
+    title: 'Blender',
     // description: 'Where taste meets meaning.',
     href: 'works/utopia.html',
     imgSrc: '/assets/Artboard 15@4x-80.jpg',
@@ -19,14 +19,14 @@ const WORKS = [
     srcSet: '',
   }, 
   {
-    title: 'Trimmer',
+    title: 'Speaker',
     // description: 'Seize the unexpected: the invisible, made visible.',
     href: 'works/in-cognita.html',
     imgSrc: '/assets/Artboard 17@4x-80.jpg',
     srcSet: '',
   },
   {
-    title: 'Vacuum Cleaner',
+    title: 'Air Fryer ',
     // description: 'Swiss clarity for French engineering.',
     href: 'works/lgm.html',
     imgSrc: '/assets/Artboard 18@4x-80.jpg',
@@ -130,8 +130,8 @@ export default function WorksSection() {
 
         {/* "View all" + project count */}
         <div opacity="" className="work-view-all-w">
-          <a href="works.html" className="btn view-all-btn w-inline-block">
-            <div>View all products</div>
+          <a href="https://shop.mrplus.in" target="_blank" rel="noreferrer" className="btn view-all-btn w-inline-block">
+            <div>Shop Now</div>
             <div className="code-embed-2 w-embed">
               <svg className="arrow-icon" width="24" height="12" viewBox="-8 -1 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <polyline className="arrow-shaft" points="0.5,0 0.5,7.5 15.5,7.5" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round" />

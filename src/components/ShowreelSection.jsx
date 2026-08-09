@@ -18,6 +18,24 @@ export default function ShowreelSection() {
           We deliver trusted brands & innovations.
         </h2>
 
+        <div className="space-24"></div>
+        <a
+          href="https://shop.mrplus.in"
+          target="_blank"
+          rel="noreferrer"
+          className="btn black-blend w-inline-block"
+        >
+          <div className="btn__text">
+            <p className="btn__text-p">Shop Now</p>
+          </div>
+          <div className="arrow-w">
+            <div className="arrow black-blend">
+              <div className="line-arrow"></div>
+              <div className="shape-arrow"></div>
+            </div>
+          </div>
+        </a>
+
         <div className="space-65"></div>
 
         <div className="video-showreel-w">

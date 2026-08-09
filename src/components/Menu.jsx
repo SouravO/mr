@@ -15,8 +15,8 @@ export default function Menu() {
           <a href="#footer" className="link-mob w-inline-block"><div>contact</div></a>
         </div>
         <div className="link-btn-menu">
-          <a href="#" target="_blank" rel="noreferrer" className="btn mob-menu w-inline-block">
-            <div className="btn__text"><p className="btn__text-p">Let’s chat</p></div>
+          <a href="https://shop.mrplus.in" target="_blank" rel="noreferrer" className="btn mob-menu w-inline-block">
+            <div className="btn__text"><p className="btn__text-p">Shop Now</p></div>
             <div className="arrow-w">
               <div className="arrow black-blend">
                 <div className="line-arrow"></div>
